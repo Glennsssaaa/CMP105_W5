@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
 #include <string>
+#include "Zombie.h"
+#include "Mario.h"
 #include <iostream>
 
 
@@ -24,4 +26,11 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	Zombie zombie;
+	sf::Texture zombTexture;
+
+	Mario mario;
+	sf::Texture marioTexture;
+
+	float speed = 100.f;
 };
